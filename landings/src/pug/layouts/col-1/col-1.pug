@@ -1,0 +1,11 @@
+include ../../partials/config.pug
+block vars
+include ../../partials/head.pug
+//- Modal margin fix
+body
+  #cqcanvas
+    include ../../components/header/header.pug
+    main
+      block slot-1
+    include ../../components/footer/footer.pug
+  block scripts

@@ -1,0 +1,114 @@
+body{
+    background: $black;
+    font-family: 'Eina02-Regular'
+}
+
+//======================================
+//-- align
+//======================================
+.vertical-align > * {
+    display: inline-block;
+    vertical-align: middle; 
+}
+
+.font-reset{
+    font-size: 0;
+}
+
+.float-reset{
+    float: none;
+}
+
+// list of elements
+
+$colors: (black: $black, primary-blue: $primary-blue, primary-yellow:$primary-yellow, primary-gray:$primary-gray, white: $white);
+$background: (black: $black, primary-blue: $primary-blue, primary-yellow:$primary-yellow);
+$positionPM: (bottom,top,left,right);
+
+//======================================
+//-- colors
+//======================================
+
+@each $name, $color in $colors {
+    .color-#{$name} {
+      color: $color;
+    }
+}
+
+//======================================
+//-- backgrounds
+//======================================
+@each $name, $color in $background {
+    .background-#{$name} {
+      background: $color;
+    }
+}
+
+//======================================
+//-- paddings
+//======================================
+
+@for $i from 0 through 10 {
+    @each $padding in $positionPM{
+        .p-#{$padding}-#{$i*8}{
+            padding-#{$padding}: #{$i*8}px;
+        }
+    }
+}
+
+//======================================
+//-- margins
+//======================================
+
+@for $i from 0 through 10 {
+    @each $padding in $positionPM{
+        .m-#{$padding}-#{$i*8}{
+            margin-#{$padding}: #{$i*8}px;
+        }
+    }
+}
+
+.GC-main{
+    position: relative;
+    .container{
+        z-index: 2;
+        position: relative;
+    }
+    &::before{
+        content: ' ';
+        display: block;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: url('../../assets/img/brand/gluo-bg.png') top left no-repeat;
+        top: 0;
+        left: 0;
+        opacity: .3;
+        @media (min-width: 900px) {
+            opacity: .6;
+            width: 50%;
+        }
+        @media (min-width: 1300px) {
+            opacity: 1;
+            width: 50%;
+        }
+    }
+    &::after{
+        content: ' ';
+        display: block;
+        position: absolute;
+        height: 100%;
+        width: 50%;
+        top: 0;
+        right: 0;
+        background: url('../../assets/img/brand/square-bg.png') top right no-repeat;
+        display: none;
+        @media (min-width: 900px) {
+            display: block;
+            opacity: .7;
+        }
+        @media (min-width: 1300px) {
+            opacity: 1;
+        }
+    }
+}

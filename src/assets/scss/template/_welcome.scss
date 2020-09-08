@@ -1,0 +1,93 @@
+.GC__header{
+  background: black;
+  margin: 0;
+  @media screen and (max-width:550px){
+    p{
+      font-size: 11px !important;
+      padding: 16px 0 0 0 !important;
+    }
+  }
+  &--logotipo{
+    display: block;
+    max-width: 43px;
+    height: auto;
+    padding: 11px 0 11px 0;
+    @media screen and (min-width: 550px){
+      max-width: 86px;
+    }
+  }
+}
+.GC__body{
+  background: url('assets/img/banner.png') no-repeat top left #191919;
+  background-size: contain;
+  width: 100%;
+}
+.GC__message{
+  &--container{
+    margin: -40px auto 0 auto;
+    position: relative;
+    @media screen and (min-width: 768px){
+      margin: -116px auto 0 auto;
+    }
+    p,h2{
+      color: $GC-white;
+    }
+    &-blue{
+      padding: 20px !important;
+      background: $GC-blue !important;
+      color: $GC-white !important;
+      border: none !important;
+    }
+    p,h1,h2{
+      color: $GC-white;
+    }
+    
+    p.GC-message__text{
+      &--marker-color{
+        color: $GC-fluorescent;
+      }
+    }
+  }
+}
+table.button.button--fluorescent table td{
+  background:  $GC-fluorescent;
+  color: $black;
+  border: 0px solid  $GC-fluorescent;
+}
+table.button.button--fluorescent table a{
+  color: $black;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 1;
+  padding: 14px 16px;
+  &:hover,&:focus{
+    color: $black;
+    background-color: darken($GC-fluorescent, 10%);
+  }
+}
+
+.GC-socialFeed{
+  background-color: $black;
+  &__title{
+    color: $white;
+    font-size: 14px;
+  }
+  &__img{
+    display: inline-block;
+    margin: 0 12px !important;
+  }
+}
+
+.GC-footer{
+  background-color: $black;
+  &__text1{
+    font-size: 10px;
+    color: $white;
+    margin-bottom: 6px;
+  }
+  &__text2{
+    font-size: 13px;
+    color: $white;
+    margin-bottom: 6px;
+  }
+}

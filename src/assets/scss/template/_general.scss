@@ -1,0 +1,35 @@
+@font-face {
+	font-family: 'Eina 02';
+	src: url('https://gluo.mx/assets/fonts/Eina02-Regular.eot') format('eot'),
+		url('https://gluo.mx/assets/fonts/Eina02-Regular.woff2') format('woff2'),
+		url('https://gluo.mx/assets/fonts/Eina02-Regular.woff') format('woff');
+	font-weight: normal;
+  font-display: swap;
+}
+// Body Styles 
+body,
+html, 
+.body {
+  background: $black !important;
+}
+
+.container.header {
+  background: $GC-dark-gray;
+}
+table.container{
+  background: $GC-dark-gray;
+}
+// RESET
+td.columns, td.column, th.columns, th.column{
+  padding-bottom: 0;
+}
+.mb-0{
+  margin-bottom: 0;
+}
+.mb-50{
+  margin-bottom: 50px;
+}
+td, th{
+  word-wrap: none;
+  hyphens: none;
+}
