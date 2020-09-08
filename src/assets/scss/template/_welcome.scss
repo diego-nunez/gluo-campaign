@@ -1,4 +1,4 @@
-.GC__header{
+.GC-header{
   background: black;
   margin: 0;
   @media screen and (max-width:550px){
@@ -17,51 +17,74 @@
     }
   }
 }
-.GC__body{
+.GC-body{
   background: url('assets/img/banner.png') no-repeat top left #191919;
   background-size: contain;
   width: 100%;
 }
-.GC__message{
-  &--container{
+.GC-container{
     margin: -40px auto 0 auto;
     position: relative;
     @media screen and (min-width: 768px){
       margin: -116px auto 0 auto;
     }
-    p,h2{
-      color: $GC-white;
-    }
-    &-blue{
+    &__callout{
       padding: 20px !important;
-      background: $GC-blue !important;
-      color: $GC-white !important;
       border: none !important;
-    }
-    p,h1,h2{
-      color: $GC-white;
-    }
-    
-    p.GC-message__text{
-      &--marker-color{
-        color: $GC-fluorescent;
+      &--blue{
+        background: $GC-blue !important;
+        .GC-callout__text{
+          color: $GC-white !important;
+        }
+      }
+      &--aqua{
+        background: $GC-aqua !important;
+        .GC-callout__text{
+          color: $black !important;
+        }
+      }
+      &--purple{
+        background: $GC-purple !important;
+        .GC-callout__text{
+          color: $GC-white !important;
+        }
+      }
+      &--mustard{
+        background: $GC-mustard !important;
+        .GC-callout__text{
+          color: $black !important;
+        }
+      }
+      &--pink{
+        background: $GC-pink !important;
+        .GC-callout__text{
+          color: $GC-white !important;
+        }
       }
     }
-  }
+    
+    &__text{
+      &--marker-color{
+        color: $GC-fluorescent !important;
+        &-pink{
+          color: $GC-pink !important;
+        }
+      }
+    }
 }
 table.button.button--fluorescent table td{
   background:  $GC-fluorescent;
-  color: $black;
+  color: $black !important;
   border: 0px solid  $GC-fluorescent;
 }
 table.button.button--fluorescent table a{
-  color: $black;
+  color: $black !important;
   font-weight: normal;
   font-size: 13px;
   line-height: 1;
   padding: 14px 16px;
   &:hover,&:focus{
-    color: $black;
+    color: $black !important;
     background-color: darken($GC-fluorescent, 10%);
   }
 }
