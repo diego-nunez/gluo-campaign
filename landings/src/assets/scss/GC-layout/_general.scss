@@ -112,3 +112,31 @@ $positionPM: (bottom,top,left,right);
         }
     }
 }
+
+.GC-form{
+    &__field{
+        &--error{
+            color: red;
+            display: block;
+            margin-top: -10px;
+            text-align: left;
+            position: absolute;
+            padding-left: 15px;
+            font-size: 12px;
+            &::before{
+                content: ' ';
+                display: block;
+                width: 6px;
+                height: 6px;
+                background: red;
+                display: inline-block;
+                border-radius: 100%;
+                position: absolute;
+                left: 0;
+                top: 50%;
+                margin-top: -3px;
+            }
+        }
+
+    }
+}

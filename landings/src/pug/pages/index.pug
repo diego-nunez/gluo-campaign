@@ -25,41 +25,47 @@ block slot-1
           
           div(data-cq-component="leadFormGeneration")
             form(method="post" action="#" id="contacto")
-              .row
-                .col-xs-12.col-sm-12
-                  p.color-white.font-asm-bold.font-14px.m-bottom-24 Área
-                .col-xs-6.col-sm-3
-                  label.m-bottom-24
-                    span.checkboxInput
-                      input(type="radio" id="estrategia" name="subscription" data-nl-ismandatory="true" data-nl-checkboxbehavior="subscription" data-nl-bindto="xpath" data-nl-uncheckedvalue="Estrategia" data-nl-xpath="/context/profile/cusAreaGluo" data-nl-label="Area Gluo" data-nl-type="string" value="estrategia")
-                      span
-                    span.checkbox_text.color-white.font-eina-light.font-light Estrategia
-                .col-xs-6.col-sm-3
-                  label.m-bottom-24
-                    span.checkboxInput
-                      input(type="radio" id="delivery" name="subscription" data-nl-ismandatory="true" data-nl-checkboxbehavior="subscription" data-nl-bindto="xpath" data-nl-uncheckedvalue="Delivery" data-nl-xpath="/context/profile/cusAreaGluo" data-nl-label="Area Gluo" data-nl-type="string" value="delivery")
-                      span
-                    span.checkbox_text.color-white.font-eina-light.font-light Delivery
-              .row
-                .col-xs-6.col-sm-3
-                  label.m-bottom-24
-                    span.checkboxInput
-                      input(type="radio" id="ux" name="subscription" data-nl-ismandatory="true" data-nl-checkboxbehavior="subscription" data-nl-bindto="xpath" data-nl-uncheckedvalue="ux" data-nl-xpath="/context/profile/cusAreaGluo" data-nl-label="Area Gluo" data-nl-type="string" value="ux")
-                      span
-                    span.checkbox_text.color-white.font-eina-light.font-light UX
-                .col-xs-6.col-sm-3
-                  label.m-bottom-24
-                    span.checkboxInput
-                      input(type="radio" id="tecnologia" name="subscription" data-nl-ismandatory="true" data-nl-checkboxbehavior="subscription" data-nl-bindto="xpath" data-nl-uncheckedvalue="Tecnología" data-nl-xpath="/context/profile/cusAreaGluo" data-nl-label="Area Gluo" data-nl-type="string" value="Tecnología")
-                      span
-                    span.checkbox_text.color-white.font-eina-light.font-light Tecnología
-              .row
-                .col-xs-12.col-sm-12
-                  span#subscription-message
-              .row.m-bottom-40
-                .col-xs-12.col-sm-12
-                  p.m-top-40.m-bottom-24.color-white.font-asm-bold.font-14px Fecha de cumpleaños
-                  input.customInput(name="birthday" id="birthday" type='text' placeholder="MM-DD-AAAA" data-nl-ismandatory="true" data-nl-bindto="xpath" data-nl-xpath="/context/profile/birthDate" data-nl-label="Date of birth" data-nl-type="date" data-language='es'  data-date-format="mm-dd-yyyy" required="true")
-                .col-xs-12.col-sm-12.p-top-40.m-bottom-80                
-                  button.btn.btn--green(data-nl-type='action' data-nl-action='next' data-nl-checkboxbehavior='subscription' data-nl-bindto='action' data-nl-format='datetime') Enviar
+              fieldset.requiredGroup
+                .row
+                  .col-xs-12.col-sm-12
+                    p.color-white.font-asm-bold.font-14px.m-bottom-24 Área
+                  .col-xs-6.col-sm-3
+                    label.m-bottom-24
+                      span.checkboxInput
+                        input(type="radio" id="estrategia" name="subscription" data-nl-ismandatory="true" data-nl-checkboxbehavior="subscription" data-nl-bindto="xpath" data-nl-uncheckedvalue="Estrategia" data-nl-xpath="/context/profile/cusAreaGluo" data-nl-label="Area Gluo" data-nl-type="string" value="estrategia")
+                        span
+                      span.checkbox_text.color-white.font-eina-light.font-light Estrategia
+                  .col-xs-6.col-sm-3
+                    label.m-bottom-24
+                      span.checkboxInput
+                        input(type="radio" id="delivery" name="subscription" data-nl-ismandatory="true" data-nl-checkboxbehavior="subscription" data-nl-bindto="xpath" data-nl-uncheckedvalue="Delivery" data-nl-xpath="/context/profile/cusAreaGluo" data-nl-label="Area Gluo" data-nl-type="string" value="delivery")
+                        span
+                      span.checkbox_text.color-white.font-eina-light.font-light Delivery
+                .row
+                  .col-xs-6.col-sm-3
+                    label.m-bottom-24
+                      span.checkboxInput
+                        input(type="radio" id="ux" name="subscription" data-nl-ismandatory="true" data-nl-checkboxbehavior="subscription" data-nl-bindto="xpath" data-nl-uncheckedvalue="ux" data-nl-xpath="/context/profile/cusAreaGluo" data-nl-label="Area Gluo" data-nl-type="string" value="ux")
+                        span
+                      span.checkbox_text.color-white.font-eina-light.font-light UX
+                  .col-xs-6.col-sm-3
+                    label.m-bottom-24
+                      span.checkboxInput
+                        input(type="radio" id="tecnologia" name="subscription" data-nl-ismandatory="true" data-nl-checkboxbehavior="subscription" data-nl-bindto="xpath" data-nl-uncheckedvalue="Tecnología" data-nl-xpath="/context/profile/cusAreaGluo" data-nl-label="Area Gluo" data-nl-type="string" value="Tecnología")
+                        span
+                      span.checkbox_text.color-white.font-eina-light.font-light Tecnología
+              fieldset
+                .row
+                  .col-xs-12.col-sm-12
+                    span#subscription-message
+                .row.m-bottom-40
+                  .col-xs-12.col-sm-12
+                    p.m-top-40.m-bottom-24.color-white.font-asm-bold.font-14px Fecha de cumpleaños
+                    input.customInput.m-bottom-24(name="birthday" id="birthday" type='text' placeholder="MM-DD-AAAA" data-nl-ismandatory="true" data-nl-bindto="xpath" data-nl-xpath="/context/profile/birthDate" data-nl-label="Date of birth" data-nl-type="date" data-language='es'  data-date-format="mm-dd-yyyy" required="true")
+                  .col-xs-12.col-sm-12.p-top-40.m-bottom-80                
+                    button.btn.btn--green(data-nl-type='action' data-nl-action='next' data-nl-checkboxbehavior='subscription' data-nl-bindto='action' data-nl-format='datetime' disabled) Enviar
         .col-md-2
+  append script
+    script(src="https://www.gluo.mx/ux/projects/gluo-campaign/js/datepicker.min.js")
+    script(src=resourceLocator+"js/datepicker.es.js")
+    script(src=resourceLocator+"js/custom.js")
