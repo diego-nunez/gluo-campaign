@@ -19,6 +19,9 @@ body{
     float: none;
 }
 
+.full-width{
+    width: 100%;
+}
 // list of elements
 
 $colors: (black: $black, primary-blue: $primary-blue, primary-yellow:$primary-yellow, primary-gray:$primary-gray, white: $white);

@@ -108,6 +108,10 @@ body {
   float: none;
 }
 
+.full-width {
+  width: 100%;
+}
+
 .color-black {
   color: #000;
 }
