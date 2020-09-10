@@ -55,15 +55,22 @@ $fonts: (asm-bold:'ASM-Bold', asm:'ASM-Regular', eina:'Eina02-Regular', eina-lig
     }
 }
 
-$text-align: 'left','center','right','justify';
+$text-align: left,center,right,justify;
 
 @each $align in $text-align {
     .text-#{$align} {
       text-align: $align;
     }
 }
-  
-
+@media only screen and (max-width: 768px) {
+@each $align in $text-align {
+    
+        .text-mobile-#{$align} {
+            text-align: $align;
+          }
+    
+    }
+}
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     font-family: inherit;
 }

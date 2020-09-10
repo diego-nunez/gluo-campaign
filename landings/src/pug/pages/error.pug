@@ -1,0 +1,33 @@
+extends ../layouts/col-1/col-1.pug
+block vars
+  - levelAssets = "";
+  - pageName = "Index";
+  - resourceLocator = is_develop ? levelAssets : base_url;
+block slot-1
+  section.background-primary-blue
+    .container
+      .row
+        .col-md-1
+        .col-md-10.p-top-80.p-bottom-80
+          p.m-top-0.m-bottom-0.font-35px.color-white.font-asm(data-cq-component="text") Oops!
+          p.m-top-0.m-bottom-0.font-28px.color-white(data-cq-component="text")  404 - página no encontrada
+        .col-md-1
+  section.GC-main.p-top-80
+    .container
+      .row
+        .col-md-2
+        .col-md-8.text-center
+          div(data-cq-component="title")
+            p.font-44px.color-primary-blue.m-bottom-16 Yo había ponido mi página aquí
+         
+          div.p-bottom-40(data-cq-component="leadFormGeneration")
+            img.full-width.m-bottom-0.m-top-40(src="https://acs806us-res.adobesandbox.com/res/sampleinstance/34026d34eeca54b4af516ddc4b605713.png", alt="Gracias" width="309")
+            p.color-white.font-22px.m-top-40.m-bottom-32 No sabemos donde quedo la página que estabas buscando, pero… 
+                br
+                |podemos llevarte a nuestra landing.
+            a.btn.btn--green.color-black(href="#") Llévame al landing
+        .col-md-2
+  append script
+    script(src="https://www.gluo.mx/ux/projects/gluo-campaign/js/datepicker.min.js")
+    script(src=resourceLocator+"js/datepicker.es.js")
+    script(src=resourceLocator+"js/custom.js")

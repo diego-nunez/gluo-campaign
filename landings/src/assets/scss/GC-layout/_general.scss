@@ -10,7 +10,22 @@ body{
     display: inline-block;
     vertical-align: middle; 
 }
+.vertical-align-bottom{
+    vertical-align: bottom;
+}
+.clear-both{
+    display: block;
+    height: 1px;
+    width: 100%;
+    clear: both;
+}
+.max-width-285{
+    max-width: 285px;
+}
 
+.full-width {
+    max-width: 100%;
+  }
 .font-reset{
     font-size: 0;
 }
@@ -19,9 +34,6 @@ body{
     float: none;
 }
 
-.full-width{
-    width: 100%;
-}
 // list of elements
 
 $colors: (black: $black, primary-blue: $primary-blue, primary-yellow:$primary-yellow, primary-gray:$primary-gray, white: $white);

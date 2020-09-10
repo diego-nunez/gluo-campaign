@@ -67,19 +67,34 @@
 }
 
 .text-left {
-  text-align: "left";
+  text-align: left;
 }
 
 .text-center {
-  text-align: "center";
+  text-align: center;
 }
 
 .text-right {
-  text-align: "right";
+  text-align: right;
 }
 
 .text-justify {
-  text-align: "justify";
+  text-align: justify;
+}
+
+@media only screen and (max-width: 768px) {
+  .text-mobile-left {
+    text-align: left;
+  }
+  .text-mobile-center {
+    text-align: center;
+  }
+  .text-mobile-right {
+    text-align: right;
+  }
+  .text-mobile-justify {
+    text-align: justify;
+  }
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -100,16 +115,31 @@ body {
   vertical-align: middle;
 }
 
+.vertical-align-bottom {
+  vertical-align: bottom;
+}
+
+.clear-both {
+  display: block;
+  height: 1px;
+  width: 100%;
+  clear: both;
+}
+
+.max-width-285 {
+  max-width: 285px;
+}
+
+.full-width {
+  max-width: 100%;
+}
+
 .font-reset {
   font-size: 0;
 }
 
 .float-reset {
   float: none;
-}
-
-.full-width {
-  width: 100%;
 }
 
 .color-black {
