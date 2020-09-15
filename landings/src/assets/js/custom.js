@@ -2,13 +2,16 @@ $(document).ready(function() {
     $('input').change(function(){
         validateForm();
     })
-    $('#birthday').datepicker({
-        maxDate: new Date(new Date().setFullYear(new Date().getFullYear() - 18)),
-        autoClose: true,
-        onSelect: function(formattedDate, date, inst){
-            validateForm();
-        }
-    })
+    if($('#birthday').length > 0){
+
+        $('#birthday').datepicker({
+            maxDate: new Date(new Date().setFullYear(new Date().getFullYear() - 18)),
+            autoClose: true,
+            onSelect: function(formattedDate, date, inst){
+                validateForm();
+            }
+        })
+    }
     footerElement();
 });
 
