@@ -9,9 +9,12 @@ $(document).ready(function() {
             validateForm();
         }
     })
-    
+    footerElement();
 });
 
+footerElement = function(){
+    $('footer').detach().appendTo('#cqcanvas');
+}
 validateForm = function(){
     var form = $('form').not('[novalidate]');
 
