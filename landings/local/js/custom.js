@@ -17,7 +17,8 @@ $(document).ready(function() {
 });
 
 chageTitle = function(){
-    $('[data-section-change="error"]').detach().appendTo('[data-section-container="true]');
+    $('[data-section-container="true"]').empty();
+    $('[data-section-change="error"]').removeClass('d-none').detach().appendTo('[data-section-container="true"]');
 }
 footerElement = function(){
     $('footer').detach().appendTo('#cqcanvas');
