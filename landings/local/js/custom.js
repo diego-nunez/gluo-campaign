@@ -13,8 +13,12 @@ $(document).ready(function() {
         })
     }
     footerElement();
+    chageTitle();
 });
 
+chageTitle = function(){
+    $('data-section-change="error"').detach().appendTo('[data-section-container="true]');
+}
 footerElement = function(){
     $('footer').detach().appendTo('#cqcanvas');
 }

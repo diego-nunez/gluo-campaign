@@ -713,3 +713,7 @@ footer {
   color: #E60035;
   font-family: 'ASM-Regular';
 }
+
+.d-none {
+  display: none;
+}
