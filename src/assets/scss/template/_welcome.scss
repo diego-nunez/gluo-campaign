@@ -18,9 +18,12 @@
   }
 }
 .GC-body{
-  background: url('assets/img/banner.png') no-repeat top left #191919;
   background-size: contain;
   width: 100%;
+  background: #191919;
+  &--bg-img{
+    background: url('assets/img/banner.png') no-repeat top left #191919;
+  }
 }
 .GC-container{
     margin: -40px auto 0 auto;
@@ -64,6 +67,9 @@
     }
     
     &__text{
+      &--white,p.GC-container__text--white,h2.GC-container__text--white{
+        color: $GC-white;
+      }
       &--marker-color{
         color: $GC-fluorescent !important;
         &-pink{
