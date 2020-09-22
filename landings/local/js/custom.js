@@ -17,7 +17,7 @@ $(document).ready(function() {
 });
 
 chageTitle = function(){
-    $('[data-section-container="true"]').empty();
+    if($('[data-section-change="error"]').length > 0) $('[data-section-container="true"]').empty();
     $('[data-section-change="error"]').removeClass('d-none').detach().appendTo('[data-section-container="true"]');
 }
 footerElement = function(){
