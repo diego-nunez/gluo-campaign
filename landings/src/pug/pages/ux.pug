@@ -1,0 +1,114 @@
+extends ../layouts/col-1/col-1.pug
+block vars
+  - levelAssets = "";
+  - pageName = "Index";
+  - resourceLocator = is_develop ? levelAssets : base_url;
+block slot-1
+  section.background-aqua
+    .container
+      .row
+        .col-md-1
+        .col-md-10.p-top-80.p-bottom-80(data-section-container="false")
+          p.m-top-0.m-bottom-0.font-35px.color-black.font-asm(data-cq-component="text") ¡Vientos!
+          p.m-top-0.m-bottom-0.font-28px.color-black(data-cq-component="text")  Ya es el último paso de esta campaña
+        .col-md-1
+  section.GC-main.p-top-80
+    .container
+      .row
+        .col-md-2
+        .col-md-8
+          span.color-white.font-22px.m-bottom-24.font-asm(data-cq-component="text") [First Name]
+          div(data-cq-component="title")
+            h1.font-44px.color-aqua.m-bottom-16 ¡Nivel desbloqueado!
+          div(data-cq-component="title")
+            h2.font-35px.color-white.m-bottom-40.m-top-64 Ya sabemos que eres del área de UX y estamos ahondando en tus conocimientos:
+          
+          div(data-cq-component="leadFormGeneration")
+            form(method="post" action="#" id="contacto")
+                fieldset.requiredGroup
+                    .row
+                        .col-xs-12.col-sm-12
+                            p.color-white.font-asm-bold.font-14px.m-bottom-24 ¿Tienes certificaciones?
+                        .col-xs-12.col-sm-12
+                            label.m-bottom-24
+                                span.checkboxInput
+                                    input(type="radio" id="agiles" name="certificaciones" data-nl-ismandatory="true" data-nl-checkboxbehavior="subscription" data-nl-bindto="xpath" data-nl-uncheckedvalue="Agiles" data-nl-xpath="/context/profile/cusAreaGluo" data-nl-label="Area Gluo" data-nl-type="string" value="estrategia")
+                                    span
+                                span.checkbox_text.color-white.font-eina-light.font-light Si
+                        .col-xs-12.col-sm-12
+                            label.m-bottom-24
+                                span.checkboxInput
+                                    input(type="radio" id="cascadas" name="certificaciones" data-nl-ismandatory="true" data-nl-checkboxbehavior="subscription" data-nl-bindto="xpath" data-nl-uncheckedvalue="Cascadas" data-nl-xpath="/context/profile/cusAreaGluo" data-nl-label="Area Gluo" data-nl-type="string" value="delivery")
+                                    span
+                                span.checkbox_text.color-white.font-eina-light.font-light No
+                fieldset.requiredGroup
+                    .row
+                        .col-xs-12.col-sm-12
+                            p.color-white.font-asm-bold.font-14px.m-bottom-24 ¿Cómo te desempeñas en el área?
+                        .col-xs-12.col-sm-12
+                            label.m-bottom-24
+                                span.checkboxInput
+                                    input(type="radio" id="agiles" name="certificaciones" data-nl-ismandatory="true" data-nl-checkboxbehavior="subscription" data-nl-bindto="xpath" data-nl-uncheckedvalue="Agiles" data-nl-xpath="/context/profile/cusAreaGluo" data-nl-label="Area Gluo" data-nl-type="string" value="estrategia")
+                                    span
+                                span.checkbox_text.color-white.font-eina-light.font-light UX
+                        .col-xs-12.col-sm-12
+                            label.m-bottom-24
+                                span.checkboxInput
+                                    input(type="radio" id="cascadas" name="certificaciones" data-nl-ismandatory="true" data-nl-checkboxbehavior="subscription" data-nl-bindto="xpath" data-nl-uncheckedvalue="Cascadas" data-nl-xpath="/context/profile/cusAreaGluo" data-nl-label="Area Gluo" data-nl-type="string" value="delivery")
+                                    span
+                                span.checkbox_text.color-white.font-eina-light.font-light UI
+                        .col-xs-12.col-sm-12
+                            label.m-bottom-24
+                                span.checkboxInput
+                                    input(type="radio" id="cascadas" name="certificaciones" data-nl-ismandatory="true" data-nl-checkboxbehavior="subscription" data-nl-bindto="xpath" data-nl-uncheckedvalue="Cascadas" data-nl-xpath="/context/profile/cusAreaGluo" data-nl-label="Area Gluo" data-nl-type="string" value="delivery")
+                                    span
+                                span.checkbox_text.color-white.font-eina-light.font-light HTML
+                fieldset.requiredGroup
+                    .row
+                        .col-xs-12.col-sm-12
+                            p.color-white.font-asm-bold.font-14px.m-bottom-24 ¿Conoces las plataformas de Adobe?
+                        .col-xs-12.col-sm-12
+                            label.m-bottom-24
+                                span.checkboxInput
+                                    input(type="radio" id="agiles" name="adobe" data-nl-ismandatory="true" data-nl-checkboxbehavior="subscription" data-nl-bindto="xpath" data-nl-uncheckedvalue="Agiles" data-nl-xpath="/context/profile/cusAreaGluo" data-nl-label="Area Gluo" data-nl-type="string" value="estrategia")
+                                    span
+                                span.checkbox_text.color-white.font-eina-light.font-light Si
+                        .col-xs-12.col-sm-12
+                            label.m-bottom-24
+                                span.checkboxInput
+                                    input(type="radio" id="cascadas" name="adobe" data-nl-ismandatory="true" data-nl-checkboxbehavior="subscription" data-nl-bindto="xpath" data-nl-uncheckedvalue="Cascadas" data-nl-xpath="/context/profile/cusAreaGluo" data-nl-label="Area Gluo" data-nl-type="string" value="delivery")
+                                    span
+                                span.checkbox_text.color-white.font-eina-light.font-light No
+                fieldset.requiredGroup
+                    .row
+                        .col-xs-12.col-sm-12
+                            p.color-white.font-asm-bold.font-14px.m-bottom-24 ¿Cuál(es)?
+                        .col-xs-12.col-sm-12
+                            label.m-bottom-24
+                                span.checkboxInput
+                                    input(type="radio" id="agiles" name="cuales" data-nl-ismandatory="true" data-nl-checkboxbehavior="subscription" data-nl-bindto="xpath" data-nl-uncheckedvalue="Agiles" data-nl-xpath="/context/profile/cusAreaGluo" data-nl-label="Area Gluo" data-nl-type="string" value="estrategia")
+                                    span
+                                span.checkbox_text.color-white.font-eina-light.font-light Creative & Design
+                        .col-xs-12.col-sm-12
+                            label.m-bottom-24
+                                span.checkboxInput
+                                    input(type="radio" id="cascadas" name="cuales" data-nl-ismandatory="true" data-nl-checkboxbehavior="subscription" data-nl-bindto="xpath" data-nl-uncheckedvalue="Cascadas" data-nl-xpath="/context/profile/cusAreaGluo" data-nl-label="Area Gluo" data-nl-type="string" value="delivery")
+                                    span
+                                span.checkbox_text.color-white.font-eina-light.font-light Marketing & Commerce
+                        .col-xs-12.col-sm-12
+                            label.m-bottom-24
+                                span.checkboxInput
+                                    input(type="radio" id="cascadas" name="cuales" data-nl-ismandatory="true" data-nl-checkboxbehavior="subscription" data-nl-bindto="xpath" data-nl-uncheckedvalue="Cascadas" data-nl-xpath="/context/profile/cusAreaGluo" data-nl-label="Area Gluo" data-nl-type="string" value="delivery")
+                                    span
+                                span.checkbox_text.color-white.font-eina-light.font-light Business Solutions
+                fieldset
+                    .row.m-bottom-40
+                        .col-xs-12.col-sm-12
+                            p.m-top-40.m-bottom-24.color-white.font-asm-bold.font-14px Gracias por apoyarnos en esta prueba, pícale al botón de “enviar datos” y se acabó.
+                        .col-xs-12.col-sm-12.p-top-40.m-bottom-80                
+                            button.btn.btn--green(data-nl-type='action' data-nl-action='next' data-nl-checkboxbehavior='subscription' data-nl-bindto='action' data-nl-format='datetime' disabled) Enviar
+        .col-md-2
+  append script
+    script(src="https://www.gluo.mx/ux/projects/gluo-campaign/js/datepicker.min.js")
+    script(src=resourceLocator+"js/datepicker.es.js")
+    script(src=resourceLocator+"js/custom.js")

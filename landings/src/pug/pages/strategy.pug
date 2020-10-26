@@ -4,7 +4,7 @@ block vars
   - pageName = "Index";
   - resourceLocator = is_develop ? levelAssets : base_url;
 block slot-1
-  section.background-purple
+  section.background-primary-blue
     .container
       .row
         .col-md-1
@@ -19,28 +19,28 @@ block slot-1
         .col-md-8
           span.color-white.font-22px.m-bottom-24.font-asm(data-cq-component="text") [First Name]
           div(data-cq-component="title")
-            h1.font-44px.color-purple.m-bottom-16 ¡Nivel desbloqueado!
+            h1.font-44px.color-primary-blue.m-bottom-16 ¡Nivel desbloqueado!
           div(data-cq-component="title")
-            h2.font-35px.color-white.m-bottom-40.m-top-64 Ya sabemos que eres del área de delivery y estamos ahondando en tus conocimientos:
+            h2.font-35px.color-white.m-bottom-40.m-top-64 Ya sabemos que eres del área de estrategias y estamos ahondando en tus conocimientos:
           
           div(data-cq-component="leadFormGeneration")
             form(method="post" action="#" id="contacto")
               fieldset.requiredGroup
                 .row
                   .col-xs-12.col-sm-12
-                    p.color-white.font-asm-bold.font-14px.m-bottom-24 ¿Qué tipo de proyectos de gustan más?
+                    p.color-white.font-asm-bold.font-14px.m-bottom-24 ¿Qué te atrae más?
                   .col-xs-12.col-sm-12
                     label.m-bottom-24
                       span.checkboxInput
                         input(type="radio" id="agiles" name="subscription" data-nl-ismandatory="true" data-nl-checkboxbehavior="subscription" data-nl-bindto="xpath" data-nl-uncheckedvalue="Agiles" data-nl-xpath="/context/profile/cusAreaGluo" data-nl-label="Area Gluo" data-nl-type="string" value="estrategia")
                         span
-                      span.checkbox_text.color-white.font-eina-light.font-light Ágiles
+                      span.checkbox_text.color-white.font-eina-light.font-light Preventa
                   .col-xs-12.col-sm-12
                     label.m-bottom-24
                       span.checkboxInput
                         input(type="radio" id="cascadas" name="subscription" data-nl-ismandatory="true" data-nl-checkboxbehavior="subscription" data-nl-bindto="xpath" data-nl-uncheckedvalue="Cascadas" data-nl-xpath="/context/profile/cusAreaGluo" data-nl-label="Area Gluo" data-nl-type="string" value="delivery")
                         span
-                      span.checkbox_text.color-white.font-eina-light.font-light Cascadas
+                      span.checkbox_text.color-white.font-eina-light.font-light Obtener cuentas
               fieldset.requiredGroup
                 .row
                   .col-xs-12.col-sm-12
@@ -55,22 +55,6 @@ block slot-1
                     label.m-bottom-24
                       span.checkboxInput
                         input(type="radio" id="cascadas" name="certificaciones" data-nl-ismandatory="true" data-nl-checkboxbehavior="subscription" data-nl-bindto="xpath" data-nl-uncheckedvalue="Cascadas" data-nl-xpath="/context/profile/cusAreaGluo" data-nl-label="Area Gluo" data-nl-type="string" value="delivery")
-                        span
-                      span.checkbox_text.color-white.font-eina-light.font-light No
-              fieldset.requiredGroup
-                .row
-                  .col-xs-12.col-sm-12
-                    p.color-white.font-asm-bold.font-14px.m-bottom-24 ¿Practicas QA o análisis?
-                  .col-xs-12.col-sm-12
-                    label.m-bottom-24
-                      span.checkboxInput
-                        input(type="radio" id="agiles" name="practicas" data-nl-ismandatory="true" data-nl-checkboxbehavior="subscription" data-nl-bindto="xpath" data-nl-uncheckedvalue="Agiles" data-nl-xpath="/context/profile/cusAreaGluo" data-nl-label="Area Gluo" data-nl-type="string" value="estrategia")
-                        span
-                      span.checkbox_text.color-white.font-eina-light.font-light Si
-                  .col-xs-12.col-sm-12
-                    label.m-bottom-24
-                      span.checkboxInput
-                        input(type="radio" id="cascadas" name="practicas" data-nl-ismandatory="true" data-nl-checkboxbehavior="subscription" data-nl-bindto="xpath" data-nl-uncheckedvalue="Cascadas" data-nl-xpath="/context/profile/cusAreaGluo" data-nl-label="Area Gluo" data-nl-type="string" value="delivery")
                         span
                       span.checkbox_text.color-white.font-eina-light.font-light No
               fieldset.requiredGroup

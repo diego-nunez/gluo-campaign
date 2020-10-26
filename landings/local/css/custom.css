@@ -162,6 +162,18 @@ body {
   color: #fff;
 }
 
+.color-purple {
+  color: #8000d8;
+}
+
+.color-aqua {
+  color: #3bf3d6;
+}
+
+.color-yellow {
+  color: #e5c133;
+}
+
 .background-black {
   background: #000;
 }
@@ -172,6 +184,18 @@ body {
 
 .background-primary-yellow {
   background: #ccff00;
+}
+
+.background-purple {
+  background: #8000d8;
+}
+
+.background-aqua {
+  background: #3bf3d6;
+}
+
+.background-yellow {
+  background: #e5c133;
 }
 
 .p-bottom-0 {

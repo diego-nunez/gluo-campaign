@@ -36,8 +36,9 @@ body{
 
 // list of elements
 
-$colors: (black: $black, primary-blue: $primary-blue, primary-yellow:$primary-yellow, primary-gray:$primary-gray, white: $white);
-$background: (black: $black, primary-blue: $primary-blue, primary-yellow:$primary-yellow);
+$colors: (black: $black, primary-blue: $primary-blue, primary-yellow:$primary-yellow, primary-gray:$primary-gray, 
+            white: $white, purple: $purple, aqua:$aqua, yellow:$yellow);
+$background: (black: $black, primary-blue: $primary-blue, primary-yellow:$primary-yellow, purple: $purple, aqua:$aqua, yellow:$yellow);
 $positionPM: (bottom,top,left,right);
 
 //======================================

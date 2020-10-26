@@ -32,15 +32,24 @@ validateForm = function(){
             groupsToValidate = that.find(".requiredGroup"),
             isValid = [],
             alertText = "<span class='GC-form__field--error'>Campo obligatorio</span>";
-
-            if(groupsToValidate.find('input:checked').length > 0){
-                isValid.push(1);
-                $('.GC-form__field--error').remove();
-            }else{
-                groupsToValidate.append(alertText)
-                isValid.push(0);
+            
+            groupsToValidate.each(function(){
+                 if($(this).find('input:checked').length > 0){
+                    isValid.push(1);
+                    $('.GC-form__field--error').remove();
+                }else{
+                    isValid.push(0);
+                    
+                }
+            })
+            // if(groupsToValidate.find('input:checked').length > 0){
+            //     isValid.push(1);
+            //     $('.GC-form__field--error').remove();
+            // }else{
+            //     groupsToValidate.append(alertText)
+            //     isValid.push(0);
                 
-            }
+            // }
             
             if(fieldsToValidate.val() != ''){
                 isValid.push(1);
@@ -50,7 +59,7 @@ validateForm = function(){
                 isValid.push(0);
                 
             }
-
+            console.log(isValid,'isValid');
         that.find('button')[isValid.indexOf(0) == -1 ? "removeAttr" : "prop"]('disabled','disabled');
   
     })
