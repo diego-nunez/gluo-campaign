@@ -739,6 +739,8 @@ footer {
 }
 
 .btn--green-inverse{
+  font-family: 'ASM-Bold';
+  font-size: 14px;
   background: none;
   border: 1px solid #ccff00;
   color: #ccff00;
