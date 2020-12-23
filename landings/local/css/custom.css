@@ -742,6 +742,7 @@ footer {
   background: none;
   border: 1px solid #ccff00;
   color: #ccff00;
+  padding: 16px 44px;
 }
 .btn--green-inverse:hover{
   padding: 16px 44px;
@@ -767,4 +768,10 @@ footer {
 .btn-list li{
   display: inline-block;
   width: 50%;
+}
+@media only screen and (max-width: 768px) {
+  .btn-list li{
+    width: 100%;
+    margin-bottom: 40px;
+  }
 }
