@@ -57,7 +57,9 @@
 .font-22px {
   font-size: 22px;
 }
-
+.font-18px {
+  font-size: 18px;
+}
 .font-16px {
   font-size: 16px;
 }
@@ -129,7 +131,9 @@ body {
 .max-width-285 {
   max-width: 285px;
 }
-
+.max-width-500 {
+  max-width: 285px;
+}
 .full-width {
   max-width: 100%;
 }
@@ -725,6 +729,7 @@ footer {
   font-family: 'ASM-Bold';
   font-size: 14px;
   background: #ccff00;
+  color: black;
 }
 
 .btn--green:hover {
@@ -733,6 +738,18 @@ footer {
   color: #ccff00;
 }
 
+.btn--green-inverse{
+  background: none;
+  border: 1px solid #ccff00;
+  color: #ccff00;
+}
+.btn--green-inverse:hover{
+  padding: 16px 44px;
+  font-family: 'ASM-Bold';
+  font-size: 14px;
+  background: #ccff00;
+  color: black;
+}
 .error {
   color: #E60035;
   font-family: 'ASM-Regular';
@@ -740,4 +757,14 @@ footer {
 
 .d-none {
   display: none;
+}
+
+.btn-list{
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+}
+.btn-list li{
+  display: inline-block;
+  width: 50%;
 }
